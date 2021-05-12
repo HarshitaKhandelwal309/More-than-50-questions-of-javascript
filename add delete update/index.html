@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [45,54,32,26,96,78,11]
+        console.log("actual array " +  arr)
+
+//add
+//at beggining
+arr.unshift(37);
+console.log(arr);
+//at end
+arr.push(77);
+console.log(arr);
+
+// delete
+//at beggining
+arr.shift();
+console.log(arr);
+//at end
+arr.pop();
+console.log(arr);
+
+arr.splice(1,3,"hii");
+console.log(arr);
+
+
+var slicedArray=arr.slice(3,6);
+console.log(slicedArray);
+
+
+//updation
+
+arr[5]="update";
+console.log(arr);
+
+    </script>
+</body>
+</html>

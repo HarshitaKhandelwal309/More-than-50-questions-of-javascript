@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function to_hex(data)
+{
+    return data.toString(16)
+}
+
+
+function to_ascii(data)
+{
+    var rs = 0;
+    var i=0;
+    while(data!=0)
+    {
+        rs+= (Math.pow(16,i))*(data%10);
+        i++;
+        data = parseInt(data/10);
+    }
+    return rs;
+}
+
+var data = 'a';
+
+console.log("Hex value : " +to_hex(data.charCodeAt(0)))
+
+var hexcode = 61;
+
+console.log('Ascii Value : '+to_ascii(hexcode));
+    </script>
+</body>
+</html>

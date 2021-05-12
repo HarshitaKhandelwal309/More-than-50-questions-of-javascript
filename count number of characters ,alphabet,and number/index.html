@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var data = "Harshi309";
+        // var lower = data.toLowerCase();
+       
+        // for(var i=0 ;i<lower.length;i++)
+        // {
+        //     if(lower.charCodeAt(i)>96 && lower.charCodeAt(i)<123 )
+        //     {
+        //         console.log("yes its alphabet");
+                 
+        //     }
+        //     else{
+        //          console.log("no its alphabet");
+        //     }
+           
+        // }
+       
+
+
+        var data = "cooldude_09";
+data = data.toLowerCase();
+var alpha = 0;
+var numbers = 0;
+var symbols = 0;
+for(var i=0;i<data.length;i++)
+{
+
+    if(isNaN(data.charAt(i)))
+    {
+        if(data.charCodeAt(i) > 96 && data.charCodeAt(i) < 123)
+        {
+                alpha++;
+        }
+        else 
+        {
+                symbols++;         
+        }
+    }
+    else
+    {
+            numbers++;
+    }
+        
+        
+      
+}
+
+
+console.log("no of alpha is : ",alpha);
+console.log("no of digits is : ",numbers);
+console.log("no of symbols is : ",symbols);
+
+
+
+
+// var str = "13";
+// for(let i= 0; i<str.length;i++)
+// {
+//     if(str.charCodeAt(i)>96 && str.charCodeAt(i)<123)
+//     {
+//         console.log("Its an aplhabet");
+//     }
+//     else
+//     {
+//         console.log("Its not aplhabet");
+//     }
+// }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

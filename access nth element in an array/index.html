@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var size = parseInt(prompt('enter size of array'));
+var array = new Array();
+for(var i=0;i<size;i++)
+{
+    array.push(parseInt(prompt('enter element no : '+(i+1))));
+}
+
+var index = parseInt(prompt('enter index you want to access'));
+
+if(index>array.length)
+{
+    alert('Sorry So Such Index Exist')
+}
+else
+{
+    alert(array[index]);
+}
+    </script>
+</body>
+</html>
