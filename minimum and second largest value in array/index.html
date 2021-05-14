@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Max_and_secondMax(array)
+        {
+            let max= array[0];
+            let secondMax = array[0];
+            let min = array[0];
+            console.log(array);
+            for(let a of array)
+            {
+                if(array[a] > max)
+                {
+                    secondMax = max;
+                    max = array[a];
+
+                }
+
+                if(array[a]> secondMax && array[a]<max)
+                {
+                    secondMax= array[i];
+                     
+                }
+                if (array[a]<min)
+                {
+                    min= array[i];
+                    
+                   
+                }
+                 console.log("The minimum value is : " + min);
+            }
+            return secondMax ;
+           
+
+        }
+        console.log( "The second largest value is " + Max_and_secondMax([2,3,5,9,8,56]));
+        
+    </script>
+    
+</body>
+</html>

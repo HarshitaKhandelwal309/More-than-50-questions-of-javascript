@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var country = ["India" , "australia" , "United state of america"];
+var emptyArray = [];
+for(let c =0 ; c<country.length ; c++)
+{
+    emptyArray.push(country[c].length) ; // store length of eaxh string 
+}
+
+console.log(emptyArray);  // [5,9,23]
+
+  var maxLength = (Math.max(...emptyArray)); // it will give maximum value
+  console.log(`Maximum length is ${maxLength}`) // it will print max value
+
+   let index= (emptyArray.indexOf(maxLength)); // it will find index of that value
+   console.log(index);
+
+  console.log(country[index]); //it will give required string
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function harshii()
+        {
+            console.log(arguments.callee.name);
+        }
+        harshii();
+
+
+var country = ["India" , "australia" , "United state of america"];
+var lengtharr = [];
+for(let c =0 ;c<country.length ; c++)
+{
+   lengtharr.push(country[c].length) ;
+}
+console.log(lengtharr);
+console.log(Math.max.apply( Math, lengtharr));
+
+
+    </script>
+</body>
+</html>
